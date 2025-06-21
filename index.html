@@ -10,7 +10,7 @@
       href="assets/icons/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="components.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,86 +32,91 @@
     <header>
       <h1>Mattolivr ⋅ Portfólio</h1>
     </header>
-    <nav class="card horizontal-list" id="menu">
-      <ul>
-        <li><a href="#sobre" title="Seção Sobre Mim">Sobre Mim</a></li>
-        <li><a href="#trajetoria" title="Seção Trajetória">Trajetória</a></li>
-        <li><a href="#projetos" title="Seção Projetos">Projetos</a></li>
-        <li><a href="#contato" title="Seção Contato">Contato</a></li>
+    <nav id="menu">
+      <ul class="card horizontal-list">
+        <li>
+          <a href="#sobre" title="Seção Sobre Mim">
+            <i class="fa-regular fa-user"></i> Sobre
+          </a>
+        </li>
+        <li>
+          <a href="#trajetoria" title="Seção Trajetória">
+            <i class="fa-regular fa-compass"></i> Trajetória
+          </a>
+        </li>
+        <li>
+          <a href="#projetos" title="Seção Projetos">
+            <i class="fa-regular fa-folder-open"></i> Projetos
+          </a>
+        </li>
+        <li>
+          <a href="#contato" title="Seção Contato">
+            <i class="fa-regular fa-paper-plane"></i> Contato
+          </a>
+        </li>
       </ul>
     </nav>
     <main>
       <article id="sobre">
-        <h2>
-          <img
-            src="assets/icons/boy.png"
-            alt="Ícone de um garoto"
-            title="Ícone de um garoto"
-          />Sobre Mim
-        </h2>
-        <section class="card">
-          <h3>Quem é MattOlivr</h3>
-          <div class="row">
-            <div class="col">
-              <div class="image" id="avatar">
-                <img
-                  src="assets/avatar.jpg"
-                  alt="Imagem de perfil"
-                  title="Foto de Perfil"
-                />
-              </div>
-            </div>
-            <div class="col" id="sobre-mim">
-              <p>
-                Olá, me chamo Matheus de Oliveira, mas me verá por aí como
-                <a href="#contato" title="Seção Contato">mattolivr</a>. Sou um
-                desenvolvedor de software apaixonado por tecnologia, games e
-                música.
-              </p>
-              <ul class="card horizontal-list">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/mattolivr/"
-                    target="_blank"
-                    title="Abrir perfil do LinkedIn"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/mattolivr"
-                    target="_blank"
-                    title="Abrir perfil do GitHub"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/mattolivr_/"
-                    target="_blank"
-                    title="Abrir perfil do Instagram"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://steamcommunity.com/id/mattolivr/"
-                    target="_blank"
-                    title="Abrir perfil da Steam"
-                    ><i class="fa-brands fa-steam"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://open.spotify.com/user/nbddor0d3vybir4xth9cetoqf?si=6c54601364034af5"
-                    target="_blank"
-                    title="Abrir perfil do Spotify"
-                    ><i class="fa-brands fa-spotify"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+        <div>
+          <div class="image" id="avatar">
+            <img
+              src="assets/avatar.jpg"
+              alt="Imagem de perfil"
+              title="Foto de Perfil"
+            />
           </div>
+          <ul class="card horizontal-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mattolivr/"
+                target="_blank"
+                title="Abrir perfil do LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+                ><span>LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/mattolivr"
+                target="_blank"
+                title="Abrir perfil do GitHub"
+                ><i class="fa-brands fa-github"></i><span>GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mattolivr_/"
+                target="_blank"
+                title="Abrir perfil do Instagram"
+                ><i class="fa-brands fa-instagram"></i><span>Instagram</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://steamcommunity.com/id/mattolivr/"
+                target="_blank"
+                title="Abrir perfil da Steam"
+                ><i class="fa-brands fa-steam"></i><span>Steam</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/user/nbddor0d3vybir4xth9cetoqf?si=6c54601364034af5"
+                target="_blank"
+                title="Abrir perfil do Spotify"
+                ><i class="fa-brands fa-spotify"></i><span>Spotify</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <section class="card">
+          <h3>Sobre Mim</h3>
+          <p>
+            Olá, me chamo Matheus de Oliveira, mas me verá por aí como
+            <a href="#contato" title="Seção Contato">mattolivr</a>. Sou um
+            desenvolvedor de software apaixonado por tecnologia, games e música.
+          </p>
           <p>
             Atuo como desenvolvedor full-stack a nível Júnior em um projeto de
             Ponto de Vendas para o mercado varejista. Sou técnico em
@@ -119,7 +124,9 @@
             graduação em Segurança da Informação na FATEC e cursando Engenharia
             de Software pelo Instituto Infnet.
           </p>
-          <h4>Tecnologias que Domino</h4>
+        </section>
+        <section class="card">
+          <h3>Tecnologias que Trabalho</h3>
           <ul class="grid">
             <li>
               <a
@@ -128,24 +135,11 @@
                 title="Abrir documentação do Java"
               >
                 <img
-                  src="assets/technologies/java.png"
+                  src="assets/technologies/java.webp"
                   alt="Logo do Java"
                   title="Ícone do Java"
                 />
                 Java
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                title="Abrir documentação do Typescript"
-              >
-                <img
-                  src="assets/technologies/typescript.webp"
-                  alt="Logo do Typescript"
-                  title="Ícone do Typescript"
-                />Typescript
               </a>
             </li>
             <li>
@@ -181,7 +175,7 @@
                 title="Abrir documentação do React.js"
               >
                 <img
-                  src="assets/technologies/react.webp"
+                  src="assets/technologies/react.png"
                   alt="Logo do React.js"
                   title="Ícone do React.js"
                 />React.js
@@ -198,6 +192,32 @@
                   alt="Logo do PostgreSQL"
                   title="Ícone do PostgreSQL"
                 />PostgreSQL
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                title="Abrir documentação do Typescript"
+              >
+                <img
+                  src="assets/technologies/typescript.webp"
+                  alt="Logo do Typescript"
+                  title="Ícone do Typescript"
+                />Typescript
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                title="Abrir documentação do Tailwind CSS"
+              >
+                <img
+                  src="assets/technologies/tailwind.webp"
+                  alt="Logo do Tailwind CSS"
+                  title="Ícone do Tailwind CSS"
+                />Tailwind CSS
               </a>
             </li>
             <li>
@@ -224,19 +244,6 @@
                   alt="Logo do Python"
                   title="Ícone do Python"
                 />Python
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindcss.com/"
-                target="_blank"
-                title="Abrir documentação do Tailwind CSS"
-              >
-                <img
-                  src="assets/technologies/tailwind.webp"
-                  alt="Logo do Tailwind CSS"
-                  title="Ícone do Tailwind CSS"
-                />Tailwind CSS
               </a>
             </li>
             <li>
@@ -624,13 +631,6 @@
               >
             </div>
           </div>
-          <div class="image sticker">
-            <img
-              src="assets/icons/filme.png"
-              alt="Ícone de uma claquete de cinema"
-              title="Ícone de uma claquete de cinema"
-            />
-          </div>
         </section>
         <section class="card">
           <h3>Mercapli</h3>
@@ -668,14 +668,6 @@
                 />
               </div>
             </div>
-          </div>
-          <div class="image sticker">
-            <img
-              src="assets/icons/mercado.png"
-              alt="Ícone de um carrinho de
-            mercado"
-              title="Ícone de um carrinho de mercado"
-            />
           </div>
         </section>
       </article>
@@ -718,7 +710,7 @@
       </article>
     </main>
     <footer>
-      <span>Feito por mattolivr</span>
+      <span>por: mattolivr</span>
     </footer>
     <script src="script.js"></script>
   </body>
