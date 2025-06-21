@@ -299,65 +299,6 @@ article#contato {
   }
 }
 
-/*
-header,
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer {
-  color: var(--txt-terciary);
-  margin: 24px 0;
-}
-
-p {
-  margin: 4px 0;
-}
-
-article {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  
-}
-
-section {
-  position: relative;
-}
-
-#avatar {
-  border-radius: 50%;
-  margin: 12px 24px;
-
-  img {
-    height: 170px;
-    border-radius: 50%;
-  }
-}
-
-#sobre-mim {
-  flex-grow: 2;
-}
-
-#academico {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#contato-lista {
-  margin-bottom: 16px;
-
-  i {
-    font-size: 1.5rem;
-  }
-}
-
-
-*/
-
 #popcorn-club {
   border-radius: 50%;
 }
