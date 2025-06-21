@@ -173,7 +173,7 @@ article {
 
 article#sobre {
   div:first-of-type {
-    height: 50lvh;
+    height: 60lvh;
 
     display: flex;
     flex-direction: column;
@@ -250,20 +250,34 @@ article#sobre {
     }
   }
 
-  #avatar {
+  div:has(> #avatar) {
+    height: fit-content;
     padding: 16px;
     position: relative;
 
+    border: 1px dashed var(--card-border);
+    border-radius: 50%;
+
+    > i {
+      position: absolute;
+      animation: orbitaFora 10s linear infinite;
+      color: var(--txt-terciary);
+    }
+  }
+
+  #avatar {
+    padding: 16px;
+    position: relative;
+    border: 1px dashed var(--card-border);
+
     i {
       position: absolute;
-      animation: orbita 6s linear infinite;
+      animation: orbitaDentro 6s linear infinite;
       color: var(--txt-secondary);
     }
 
-    @media only screen and (min-width: 600px) {
-      i {
-        animation: orbita 8s linear infinite;
-      }
+    img {
+      border: 1px solid var(--card-border);
     }
   }
 
@@ -283,22 +297,40 @@ article#sobre {
   }
 }
 
-@keyframes orbita {
+@keyframes orbitaDentro {
   0% {
-    transform: rotate(0deg) translateX(103px) rotate(140deg);
+    transform: rotate(0deg) translateX(103px) rotate(142deg);
   }
   100% {
-    transform: rotate(360deg) translateX(103px) rotate(140deg);
+    transform: rotate(360deg) translateX(103px) rotate(142deg);
+  }
+}
+
+@keyframes orbitaFora {
+  0% {
+    transform: rotate(360deg) translateX(119px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(119px) rotate(360deg);
   }
 }
 
 @media only screen and (min-width: 600px) {
-  @keyframes orbita {
+  @keyframes orbitaDentro {
     0% {
       transform: rotate(0deg) translateX(136px) rotate(130deg);
     }
     100% {
       transform: rotate(360deg) translateX(136px) rotate(130deg);
+    }
+  }
+
+  @keyframes orbitaFora {
+    0% {
+      transform: rotate(360deg) translateX(154px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg) translateX(154px) rotate(360deg);
     }
   }
 }
