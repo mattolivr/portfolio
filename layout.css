@@ -193,7 +193,7 @@ article#sobre {
       padding: 6px;
 
       img {
-        height: 280px;
+        height: 170px;
         border-radius: 100%;
       }
     }
@@ -223,6 +223,10 @@ article#sobre {
     @media only screen and (min-width: 600px) {
       & {
         height: 50lvh;
+      }
+
+      .image img {
+        height: 240px;
       }
 
       .horizontal-list {
