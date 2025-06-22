@@ -260,8 +260,8 @@ article#sobre {
 
     > i {
       position: absolute;
-      animation: orbitaFora 10s linear infinite;
-      color: var(--txt-terciary);
+      animation: orbitaFora 6s linear infinite;
+      color: #a347c7;
     }
   }
 
@@ -272,12 +272,22 @@ article#sobre {
 
     i {
       position: absolute;
-      animation: orbitaDentro 6s linear infinite;
+      animation: orbitaDentro 4s linear infinite;
       color: var(--txt-secondary);
     }
 
     img {
       border: 1px solid var(--card-border);
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    div:has(> #avatar) > i {
+      animation: orbitaFora 8s linear infinite;
+    }
+
+    #avatar > i {
+      animation: orbitaDentro 6s linear infinite;
     }
   }
 
@@ -308,10 +318,10 @@ article#sobre {
 
 @keyframes orbitaFora {
   0% {
-    transform: rotate(360deg) translateX(119px) rotate(0deg);
+    transform: rotate(360deg) translateX(119px) rotate(310deg);
   }
   100% {
-    transform: rotate(0deg) translateX(119px) rotate(360deg);
+    transform: rotate(0deg) translateX(119px) rotate(310deg);
   }
 }
 
@@ -327,10 +337,10 @@ article#sobre {
 
   @keyframes orbitaFora {
     0% {
-      transform: rotate(360deg) translateX(154px) rotate(0deg);
+      transform: rotate(360deg) translateX(154px) rotate(310deg);
     }
     100% {
-      transform: rotate(0deg) translateX(154px) rotate(360deg);
+      transform: rotate(0deg) translateX(154px) rotate(310deg);
     }
   }
 }
